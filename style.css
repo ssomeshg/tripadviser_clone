@@ -147,7 +147,7 @@ a{
     height: 100%;
     position: relative;
     border-radius: 15px;
-    padding: 60px 60px;
+    padding: 6rem;
     background: linear-gradient(90deg, #d4dff7,#dcc8ff);
 }
 
@@ -177,7 +177,7 @@ a{
 }
 .banner__image{
     position: absolute;
-    bottom: 0;
+    top: 0;
  
 }
 .banner__image img{
@@ -195,6 +195,8 @@ a{
 .ad__items{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 .img--1{
     width: 100%;
@@ -223,5 +225,163 @@ object-position: left;
 }
 .ad__btn{
     background-color: #fff;
-    width: max-content;
+    width:20%;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 50px;
+}
+.ad__btn:hover .expo__btn{
+    border-bottom: 1px solid black;
+    transform: scaleX(100%);
+    transition-timing-function: linear;
+}
+
+
+/* <!--trip carousel section--> */
+
+.carousel__item--start{
+    position: relative;
+}
+.carousel__section{
+ margin-top: 40px;
+}
+.carousel__title{
+    margin-bottom: 20px;
+}
+.carousel__title p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.carousel__title span{
+    font-size: 14px;
+}
+
+.carousel__inner{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+   
+}
+.carousel__inner .item__1{
+    flex-grow: 1;
+    flex-basis: 20%;
+    height: max-content;
+   position: relative;
+}
+
+.item__1 img{
+    width: 100%;
+    border-radius: 10px;
+   
+
+}
+.item__1 h2{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    left: 10px;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    
+}
+.carousel__btn{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.carousel__btn .left__btn{
+    background-color: #fff;
+    border: 1px solid black;
+    padding:10px 15px;
+    border-radius: 50px;
+    margin-left: -15px;
+}
+.carousel__btn .right__btn{
+    background-color: #fff;
+    border: 1px solid black;
+    padding:10px 15px;
+    border-radius: 50px;
+    margin-right: -15px;
+}
+
+/* experiense sectiomn */
+
+
+
+.star__section{
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+}
+.star__items{
+    display: flex;
+    gap: 4px;
+    margin-top: 5px;
+}
+.star__items .span{
+    width: 10px;
+    height: 10px;
+    background-color: #34e0a1;
+    border-radius: 50px;
+}
+.carousel__deatails a{
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid black;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin-top: 10px;
+
+}
+.carousel__deatails p{
+    margin-top: 10px;
+}
+
+.carousel__deatails span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.mt-50{
+    margin-top: 200px;
+}
+
+.video__section{
+    margin-top: 40px;
+}
+.video iframe{
+    border-radius: 10px;
+}
+
+/* footer css */
+
+.footer{
+    background-color: rgba(255, 192, 203, 0.877);
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+@media only screen  and (max-width:768px) {
+    .navbar__center{
+        display: none;
+    }
+    .item__1 h2 {
+        position: unset;
+        bottom: 0;
+        margin-bottom: 10px;
+        left: 10px;
+        color: #000000;
+       
+    }
+    .carousel__btn{
+        display: none;
+    }
+}
+@media only screen  and (max-width:500px) {
+  body{
+    width: 100%;
+    padding: 0px 10px;
+  }
 }
