@@ -128,7 +128,7 @@ a{
 .search__bar--items{
     display: flex;
     align-items: center;
-    width: 100%;
+    
     border: 1px solid #8b8b8b;
    padding: 5px 14px;
    border-radius: 50px;
@@ -478,11 +478,12 @@ object-position: left;
         width: 100%;
     }
     .banner__section{
-        padding: 0.8rem;
+        padding: 1.8rem;
     }
     .banner__content{
         width: 100%;
         padding: 0;
+        text-align: center;
     }
 
 
