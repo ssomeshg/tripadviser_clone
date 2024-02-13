@@ -165,6 +165,7 @@ a{
 }
 
 .banner__content{
+
     width: 50%;
     height: 100%;
     padding: 50px;
@@ -193,15 +194,13 @@ a{
     border-radius: 40px;
 }
 
-.banner__image{
+.banner__img{
     position: absolute;
     top: 0;
+    width: 100%;
  
 }
-.banner__image img{
-    width: 100%;
-    object-fit: cover;
-}
+
 .banner__mob {
     display: none;
 }
@@ -449,11 +448,12 @@ object-position: left;
         font-weight: 600;
         margin-top: 10px;
     }
-    .banner__image{
+    .banner__img{
         display: none;
     }
     .banner__mob{
         display: block;
+        width: 100%;
     }
     .banner__mob img{
         width: 100%;
